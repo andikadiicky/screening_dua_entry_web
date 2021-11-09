@@ -1,0 +1,77 @@
+.card-header{
+	border-bottom: none;
+}
+
+/* Responsive toggle navtabs */
+@media screen and (min-width: 1200px) {
+	.margin-left {
+		margin-left: auto;
+	}
+}
+
+@media screen and (min-width: 320px) {
+	.flex-square-title-responsive{
+		font-size: 1rem;
+	}
+	.button-add-responsive-1{
+		margin-top: 35px;
+	}
+	.button-add-responsive-2{
+		margin-top: 35px;
+	}
+	.button-add-responsive-3{
+		margin-top: 50px;
+	}
+	.view-datatable-responsive-1{
+		margin-top: 30px;
+	}
+	.view-datatable-responsive-2{
+		margin-top: 15px;
+	}
+	.view-datatable-responsive-3{
+		margin-top: 50px;
+	}
+	.add-margin{
+		margin-left: unset;
+	}
+	.add-margin-1{
+		margin-left: unset;
+	}
+	.add-margin-2{
+		margin-left: unset;
+	}
+	
+}
+
+@media screen and (min-width: 1200px) {
+	.flex-square-title-responsive{
+		font-size: 1.25rem;
+	}
+	.button-add-responsive-1{
+		margin-top: unset;
+	}
+	.button-add-responsive-2{
+		margin-top: unset;
+	}
+	.button-add-responsive-3{
+		margin-top: unset;
+	}
+	.view-datatable-responsive-1{
+		margin-top: unset;
+	}
+	.view-datatable-responsive-2{
+		margin-top: unset;
+	}
+	.view-datatable-responsive-3{
+		margin-top: unset;
+	}
+	.add-margin{
+		margin-left: 250px;
+	}
+	.add-margin-1{
+		margin-left: 269px;
+	}
+	.add-margin-2{
+		margin-left: 241px;
+	}
+}
