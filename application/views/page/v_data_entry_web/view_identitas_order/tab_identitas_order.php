@@ -185,8 +185,8 @@
                                     </div>
                                 </div>
                                 <div class="float-right">
-                                    <button class="btn btn-success" id="btn-save-iden-ord-ext"><i class="fa fa-save"></i> Tambah</button>
-                                    <button class="btn btn-danger" id="btn-reset-external-sales"><i class="fa-solid fa-circle-minus"></i> Reset</button>
+                                    <button class="btn btn-success" id="btn-add-iden-ord-ext"><i class="fa fa-plus"></i> Tambah</button>
+                                    <button class="btn btn-danger" id="btn-reset-external-sales"> Reset</button>
                                 </div>
                             </div>
 
@@ -214,7 +214,7 @@
                                                     <td>data</td>
                                                     <td>data</td>
                                                     <td style="text-align: center;">
-                                                        <a href="#"><i class="fas fa-edit"></i></a>
+                                                        <a href="#"><i class="fas fa-edit fa-gray"></i></a>
                                                         <a href="#"><i class="fas fa-trash fa-red"></i></a>
                                                     </td>
                                                 </tr>
@@ -287,8 +287,8 @@
                                     </div>
                                 </div>
                                 <div class="float-right">
-                                    <button class="btn btn-success" id="btn-save-iden-ord-ext"><i class="fa fa-save"></i> Tambah</button>
-                                    <button class="btn btn-danger" id="btn-reset-external-sales"><i class="fa-solid fa-circle-minus"></i> Reset</button>
+                                    <button class="btn btn-success" id="btn-add-iden-ord-ext"><i class="fa fa-plus"></i> Tambah</button>
+                                    <button class="btn btn-danger" id="btn-reset-external-sales"> Reset</button>
                                 </div>
                             </div>
 
@@ -318,7 +318,7 @@
                                                     <td>data</td>
                                                     <td>data</td>
                                                     <td style="text-align: center;">
-                                                        <a href="#"><i class="fas fa-edit"></i></a>
+                                                        <a href="#"><i class="fas fa-edit fa-gray"></i></a>
                                                         <a href="#"><i class="fas fa-trash fa-red"></i></a>
                                                     </td>
                                                 </tr>

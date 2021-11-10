@@ -10,7 +10,7 @@
   <!-- fav -->
   <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/fav.png">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/fontawesome/css/all.css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- daterange picker -->

@@ -173,7 +173,10 @@
                                                     <td></td>
                                                     <td></td>
                                                     <td></td>
-                                                    <td style="text-align: center;"></td>
+                                                    <td style="text-align: center;">
+                                                        <a href="#"><i class="fas fa-edit fa-gray"></i></a>
+                                                        <a href="#"><i class="fas fa-trash fa-red"></i></a>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -292,7 +295,10 @@
                                                     <td></td>
                                                     <td></td>
                                                     <td></td>
-                                                    <td style="text-align: center;"></td>
+                                                    <td style="text-align: center;">
+                                                        <a href="#"><i class="fas fa-edit fa-gray"></i></a>
+                                                        <a href="#"><i class="fas fa-trash fa-red"></i></a>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -379,7 +385,10 @@
                                                     <td></td>
                                                     <td></td>
                                                     <td></td>
-                                                    <td style="text-align: center;"></td>
+                                                    <td style="text-align: center;">
+                                                        <a href="#"><i class="fas fa-edit fa-gray"></i></a>
+                                                        <a href="#"><i class="fas fa-trash fa-red"></i></a>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>

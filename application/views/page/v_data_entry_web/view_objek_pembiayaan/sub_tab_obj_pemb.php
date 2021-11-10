@@ -34,9 +34,9 @@
                                                 <td>data</td>
                                                 <td>data</td>
                                                 <td style="text-align: center;">
-                                                    <a href="#" id="edit-obj-pemb"><i class="fas fa-edit"></i></a>
-                                                    <a href="#" id="copy-obj-kendaraan"><i class="fas fa-copy"></i></a>
-                                                    <a href="#" id="copy-obj-dana" style="display: none;"><i class="fas fa-copy"></i></a>
+                                                    <a href="#" id="edit-obj-pemb"><i class="fas fa-edit fa-gray"></i></a>
+                                                    <a href="#" id="copy-obj-kendaraan"><i class="fas fa-copy fa-gray"></i></a>
+                                                    <a href="#" id="copy-obj-dana" style="display: none;"><i class="fas fa-copy fa-gray"></i></a>
                                                     <a href="#" id="delete-obj-pemb"><i class="fas fa-trash fa-red"></i></a>
                                                 </td>
                                             </tr>
@@ -727,7 +727,7 @@
                             <br>
                             <div class="col" style="display: flex; justify-content:flex-end; position:absolute; right:0; bottom:0;">
                                 <button class="btn btn-success" id="btn-save-obj-pemb"><i class="fa fa-save"></i> Save</button>
-                                <button class="btn btn-danger" id="btn-reset-obj-pemb" style="margin-left: 5px;"><i class="fa-solid fa-circle-minus"></i> Reset</button>
+                                <button class="btn btn-danger" id="btn-reset-obj-pemb" style="margin-left: 5px;"> Reset</button>
                             </div>
                         </div>
                         <!-- END Form Kanan -->

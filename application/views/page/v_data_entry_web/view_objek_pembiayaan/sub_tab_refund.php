@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="use-bottom-border">
-                        <h4>Refund</h4>
+                        <h4>Informasi Refund</h4>
                     </div>
                     <div class="card-body">
                         <div class="row">
