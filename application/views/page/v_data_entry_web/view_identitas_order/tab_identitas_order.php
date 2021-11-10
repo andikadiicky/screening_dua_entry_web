@@ -186,7 +186,7 @@
                                 </div>
                                 <div class="float-right">
                                     <button class="btn btn-success" id="btn-add-iden-ord-ext"><i class="fa fa-plus"></i> Tambah</button>
-                                    <button class="btn btn-danger" id="btn-reset-external-sales"> Reset</button>
+                                    <button class="btn btn-danger" id="btn-reset-external-sales"> <i class="fas fa-sync-alt"></i> Reset</button>
                                 </div>
                             </div>
 
@@ -288,7 +288,7 @@
                                 </div>
                                 <div class="float-right">
                                     <button class="btn btn-success" id="btn-add-iden-ord-ext"><i class="fa fa-plus"></i> Tambah</button>
-                                    <button class="btn btn-danger" id="btn-reset-external-sales"> Reset</button>
+                                    <button class="btn btn-danger" id="btn-reset-external-sales"> <i class="fas fa-sync-alt"></i> Reset</button>
                                 </div>
                             </div>
 

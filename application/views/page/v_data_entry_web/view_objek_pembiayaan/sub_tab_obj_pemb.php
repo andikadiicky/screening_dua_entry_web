@@ -727,7 +727,7 @@
                             <br>
                             <div class="col" style="display: flex; justify-content:flex-end; position:absolute; right:0; bottom:0;">
                                 <button class="btn btn-success" id="btn-save-obj-pemb"><i class="fa fa-save"></i> Save</button>
-                                <button class="btn btn-danger" id="btn-reset-obj-pemb" style="margin-left: 5px;"> Reset</button>
+                                <button class="btn btn-danger" id="btn-reset-obj-pemb" style="margin-left: 5px;"> <i class="fas fa-sync-alt"></i> Reset</button>
                             </div>
                         </div>
                         <!-- END Form Kanan -->
