@@ -8,9 +8,7 @@
                             <h5>Tipe Debitur</h5>
                             <div class="input-group">
                                 <select id="slc-tipe-deb" class="form-control select2bs4" style="width: 100%;" onchange="pilihDebitur()">
-                                    <option value="" selected disabled>Pilih Tipe Debitur</option>
-                                    <option value="Perorangan">Personal</option>
-                                    <option value="Company">Company</option>
+                                    <option value="" selected disabled></option>
                                 </select>
                             </div>
                         </div>

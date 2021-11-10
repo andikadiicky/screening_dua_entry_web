@@ -131,7 +131,7 @@
                                                     <label class="col-sm-6 col-form-label">% Kepemilikan Saham*:</label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control inp-digit" id="persen-milik-saham-pic-mg" maxlength="13">
+                                                            <input type="text" class="form-control inp-digit" id="persen-milik-saham-pic-mg" maxlength="100">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -161,15 +161,13 @@
                                                     <th>Jenis Identitas</th>
                                                     <th>No Identitas</th>
                                                     <th>Nama Lengkap</th>
-                                                    <th>Tanggal Lahir</th>
-                                                    <th>Tempat Lahir</th>
+                                                    <th>Jabatan</th>
                                                     <th>% Kepemilikan Saham</th>
                                                     <th>Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td></td>
                                                     <td></td>
                                                     <td></td>
                                                     <td></td>
@@ -252,7 +250,7 @@
                                                     <label class="col-sm-6 col-form-label">% Kepemilikan Saham*:</label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control inp-digit" id="persen-kepemilikan-pemegang-saham" maxlength="13">
+                                                            <input type="text" class="form-control inp-digit" id="persen-kepemilikan-pemegang-saham" maxlength="100">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -322,7 +320,7 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group row">
-                                                    <label class="col-sm-6 col-form-label">Pemilik Saham*:</label>
+                                                    <label class="col-sm-6 col-form-label">Pemilik Saham:</label>
                                                     <div class="col-sm-6">
                                                         <select class="form-control select2bs4" style="width: 100%;" id="slc-pemilik-saham">
                                                             <option selected disabled=""></option>
@@ -330,7 +328,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-sm-6 col-form-label">Nama Instansi Publik*:</label>
+                                                    <label class="col-sm-6 col-form-label">Nama Instansi Publik:</label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
                                                             <input type="text" class="form-control" id="inp-nama-instansi-publik">
@@ -338,10 +336,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-sm-6 col-form-label">% Kepemilikan Saham*:</label>
+                                                    <label class="col-sm-6 col-form-label">% Kepemilikan Saham:</label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control inp-digit" id="persen-kepemilikan-saham-masy" maxlength="13">
+                                                            <input type="text" class="form-control inp-digit" id="persen-kepemilikan-saham-masy" maxlength="100">
                                                         </div>
                                                     </div>
                                                 </div>

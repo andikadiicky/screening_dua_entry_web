@@ -118,13 +118,13 @@
                                     <label class="col-sm-5 col-form-label">Total Lama Usaha*:</label>
                                     <div class="col-sm-7">
                                         <div class="input-group">
-                                            <input type="text" class="form-control inp-digit" id="inp-total-thn-usaha-comp">
+                                            <input type="text" class="form-control inp-digit" id="inp-total-thn-usaha-comp" readonly>
                                             <div class="col-md-2" style="display:flex; justify-content:center; align-items:center; margin:2px">
                                                 <center>
                                                     Thn
                                                 </center>
                                             </div>
-                                            <input type="text" class="form-control" id="inp-total-bln-usaha-comp">
+                                            <input type="text" class="form-control" id="inp-total-bln-usaha-comp" readonly>
                                             <div class="col-md-2" style="display:flex; justify-content:center; align-items:center;">
                                                 <center>
                                                     Bln
@@ -166,7 +166,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-5 col-form-label">No Akta Perubahana Terakhir:</label>
+                                    <label class="col-sm-5 col-form-label">No Akta Perubahan Terakhir:</label>
                                     <div class="col-sm-7">
                                         <div class="input-group">
                                             <input type="text" class="form-control inp-digit" id="inp-last-no-akta">
@@ -228,13 +228,13 @@
                                                 <label class="col-sm-3 col-form-label">RT/RW*:</label>
                                                 <div class="col-sm-9">
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control inp-digit" id="inp-rt-comp">
+                                                        <input type="text" class="form-control inp-digit" id="inp-rt-comp" maxlength="3">
                                                         <div class="col-md-2" style="display:flex; justify-content:center; align-items:center; font-weight:bold">
                                                             <center>
                                                                 /
                                                             </center>
                                                         </div>
-                                                        <input type="text" class="form-control" id="inp-rw-comp">
+                                                        <input type="text" class="form-control" id="inp-rw-comp" maxlength="3">
                                                     </div>
                                                 </div>
                                             </div>

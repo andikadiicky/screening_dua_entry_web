@@ -149,7 +149,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-sm-6 col-form-label">Email*:</label>
+                                                    <label class="col-sm-6 col-form-label">Email:</label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
                                                             <input type="text" class="form-control" id="inp-email">
@@ -157,7 +157,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-sm-6 col-form-label">Foto NPWP*:</label>
+                                                    <label class="col-sm-6 col-form-label">Foto NPWP:</label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
                                                             <span class="btn btn-info btn-file">Upload<input type="file" id="npwp-personal" /></span>
@@ -165,6 +165,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <input type="hidden" id="kepemilikan-npwp" name="" value="">
                                             </div>
                                         </div>
                                     </div>
@@ -266,13 +267,13 @@
                                                 <label class="col-sm-5 col-form-label">RT/RW*:</label>
                                                 <div class="col-sm-7">
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control inp-digit" id="inp-rt-ktp">
+                                                        <input type="text" class="form-control inp-digit" id="inp-rt-ktp" maxlength="3">
                                                         <div class="col-md-2" style="display:flex; justify-content:center; align-items:center; font-weight:bold">
                                                             <center>
                                                                 /
                                                             </center>
                                                         </div>
-                                                        <input type="text" class="form-control" id="inp-rw-ktp">
+                                                        <input type="text" class="form-control" id="inp-rw-ktp" maxlength="3">
                                                     </div>
                                                 </div>
                                             </div>
@@ -287,25 +288,25 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-5 col-form-label">Kelurahan*:</label>
                                                 <div class="col-sm-7">
-                                                    <input type="text" class="form-control" id="inp-kelurahan-ktp" disabled>
+                                                    <input type="text" class="form-control" id="inp-kelurahan-ktp" readonly>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-5 col-form-label">Kecamatan*:</label>
                                                 <div class="col-sm-7">
-                                                    <input type="text" class="form-control" id="inp-kecamatan-ktp" disabled>
+                                                    <input type="text" class="form-control" id="inp-kecamatan-ktp" readonly>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-5 col-form-label">Kab/Kota*:</label>
                                                 <div class="col-sm-7">
-                                                    <input type="text" class="form-control" id="inp-kabkot-ktp" disabled>
+                                                    <input type="text" class="form-control" id="inp-kabkot-ktp" readonly>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-5 col-form-label">Provinsi*:</label>
                                                 <div class="col-sm-7">
-                                                    <input type="text" class="form-control" id="inp-provinsi-ktp" disabled>
+                                                    <input type="text" class="form-control" id="inp-provinsi-ktp" readonly>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
@@ -355,13 +356,13 @@
                                                 <label class="col-sm-5 col-form-label">RT/RW*:</label>
                                                 <div class="col-sm-7">
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control inp-digit" id="inp-rt-dom">
+                                                        <input type="text" class="form-control inp-digit" id="inp-rt-dom" maxlength="3">
                                                         <div class="col-md-2" style="display:flex; justify-content:center; align-items:center; font-weight:bold">
                                                             <center>
                                                                 /
                                                             </center>
                                                         </div>
-                                                        <input type="text" class="form-control" id="inp-rw-dom">
+                                                        <input type="text" class="form-control" id="inp-rw-dom" maxlength="3">
                                                     </div>
                                                 </div>
                                             </div>
@@ -376,25 +377,25 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-5 col-form-label">Kelurahan*:</label>
                                                 <div class="col-sm-7">
-                                                    <input type="text" class="form-control" id="inp-kelurahan-dom" disabled>
+                                                    <input type="text" class="form-control" id="inp-kelurahan-dom" readonly>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-5 col-form-label">Kecamatan*:</label>
                                                 <div class="col-sm-7">
-                                                    <input type="text" class="form-control" id="inp-kecamatan-dom" disabled>
+                                                    <input type="text" class="form-control" id="inp-kecamatan-dom" readonly>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-5 col-form-label">Kab/Kota*:</label>
                                                 <div class="col-sm-7">
-                                                    <input type="text" class="form-control" id="inp-kabkot-dom" disabled>
+                                                    <input type="text" class="form-control" id="inp-kabkot-dom" readonly>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-5 col-form-label">Provinsi*:</label>
                                                 <div class="col-sm-7">
-                                                    <input type="text" class="form-control" id="inp-provinsi-dom" disabled>
+                                                    <input type="text" class="form-control" id="inp-provinsi-dom" readonly>
                                                 </div>
                                             </div>
                                             <div class="form-group row">

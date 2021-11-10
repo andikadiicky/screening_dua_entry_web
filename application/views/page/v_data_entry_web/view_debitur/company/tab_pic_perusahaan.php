@@ -128,7 +128,7 @@
                                                     <label class="col-sm-6 col-form-label">% Kepemilikan Saham*:</label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control inp-digit" id="inp-persen-saham-pic-perusahaan" maxlength="13">
+                                                            <input type="text" class="form-control inp-digit" id="inp-persen-saham-pic-perusahaan" maxlength="100">
                                                         </div>
                                                     </div>
                                                 </div>

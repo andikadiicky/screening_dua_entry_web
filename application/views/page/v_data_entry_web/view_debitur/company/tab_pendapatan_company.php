@@ -29,6 +29,14 @@
                                             <input type="text" class="form-control inp-digit" id="inp-biaya-opr-comp">
                                         </div>
                                     </div>
+                                    <input type="hidden" id="sumber-pendapatan-comp" name="" value="">
+                                    <input type="hidden" id="laba-kotor-comp" name="" value="">
+                                    <input type="hidden" id="laba-opr-comp" name="" value="">
+                                    <input type="hidden" id="angs-diajukan-comp" name="" value="">
+                                    <input type="hidden" id="angs-muf-deb-comp" name="" value="">
+                                    <input type="hidden" id="angs-lain-deb-comp" name="" value="">
+                                    <input type="hidden" id="tot-angs-seluruh-comp" name="" value="">
+                                    <input type="hidden" id="dscr-comp" name="" value="">
                                 </div>
                                 <!-- END Informasi Pendapatan Company -->
                             </div>

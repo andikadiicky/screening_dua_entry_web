@@ -94,7 +94,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group row" id="form-object-pemb-pengajuan-pencairan" style="display: none;">
-                                    <label class="col-sm-4 col-form-label">Pengajuan Pencairan*:</label>
+                                    <label class="col-sm-4 col-form-label">Pengajuan Pencairan:</label>
                                     <div class="col-sm-8">
                                         <div class="input-group">
                                             <input type="text" class="form-control inp-digit" id="inp-pengajuan-pencairan">
@@ -121,7 +121,7 @@
                                     <label class="col-sm-4 col-form-label">%Upping:</label>
                                     <div class="col-sm-8">
                                         <div class="input-group">
-                                            <input type="text" class="form-control inp-digit" id="inp-upping" disabled>
+                                            <input type="text" class="form-control inp-digit" id="inp-upping" readonly>
                                         </div>
                                     </div>
                                 </div>
@@ -191,12 +191,12 @@
                                                         <label class="col-sm-4 col-form-label">Rekening Produk:</label>
                                                         <div class="col-sm-3">
                                                             <div class="input-group">
-                                                                <input type="text" class="form-control" id="inp-kode-rek-produk">
+                                                                <input type="text" class="form-control" id="inp-kode-rek-produk" readonly>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-5">
                                                             <div class="input-group">
-                                                                <input type="text" class="form-control" id="inp-desc-rek-produk">
+                                                                <input type="text" class="form-control" id="inp-desc-rek-produk" readonly>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -204,12 +204,12 @@
                                                         <label class="col-sm-4 col-form-label">Rekening Komisi:</label>
                                                         <div class="col-sm-3">
                                                             <div class="input-group">
-                                                                <input type="text" class="form-control" id="inp-kode-rek-komisi">
+                                                                <input type="text" class="form-control" id="inp-kode-rek-komisi" readonly>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-5">
                                                             <div class="input-group">
-                                                                <input type="text" class="form-control" id="inp-desc-rek-komisi">
+                                                                <input type="text" class="form-control" id="inp-desc-rek-komisi" readonly>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -217,12 +217,12 @@
                                                         <label class="col-sm-4 col-form-label">Rekening Discount:</label>
                                                         <div class="col-sm-3">
                                                             <div class="input-group">
-                                                                <input type="text" class="form-control" id="inp-kode-rek-discount">
+                                                                <input type="text" class="form-control" id="inp-kode-rek-discount" readonly>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-5">
                                                             <div class="input-group">
-                                                                <input type="text" class="form-control" id="inp-desc-rek-discount">
+                                                                <input type="text" class="form-control" id="inp-desc-rek-discount" readonly>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -316,7 +316,7 @@
                                         <label class="col-sm-4 col-form-label">%LTV:</label>
                                         <div class="col-sm-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-ltv" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-ltv" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -369,7 +369,7 @@
                                         <label class="col-sm-4 col-form-label">Biaya Tunai:</label>
                                         <div class="col-sm-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-tunai-admin" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-tunai-admin" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -403,7 +403,7 @@
                                         <label class="col-sm-4 col-form-label">Biaya Tunai:</label>
                                         <div class="col-sm-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-tunai-provisi" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-tunai-provisi" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -437,7 +437,7 @@
                                         <label class="col-sm-4 col-form-label">Biaya Fiducia:</label>
                                         <div class="col-sm-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-biaya-fiducia" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-biaya-fiducia" readonly>
                                             </div>
                                             <div class="input-group">
                                                 <div class="form-check form-check-inline">
@@ -462,10 +462,10 @@
                                 </div>
                                 <div class="flex-square-body">
                                     <div class="form-group row">
-                                        <label class="col-sm-4 col-form-label">Total Biaya:</label>
+                                        <label class="col-sm-4 col-form-label">Total Bunga:</label>
                                         <div class="col-sm-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-tot-biaya-angs" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-tot-bunga-angs" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -473,7 +473,7 @@
                                         <label class="col-sm-4 col-form-label">Angsuran Pertama:</label>
                                         <div class="col-sm-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-angs-pertama" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-angs-pertama" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -481,7 +481,7 @@
                                         <label class="col-sm-4 col-form-label">Angsuran Terakhir:</label>
                                         <div class="col-sm-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-angs-terakhir" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-angs-terakhir" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -504,7 +504,7 @@
                                         <label class="col-sm-4 col-form-label">Tenor Asuransi:</label>
                                         <div class="col-sm-4">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="inp-tenor-asuransi" disabled>
+                                                <input type="text" class="form-control" id="inp-tenor-asuransi" readonly>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -558,7 +558,7 @@
                                         <label class="col-sm-4 col-form-label">Biaya Total Asuransi:</label>
                                         <div class="col-sm-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-tot-biaya-asuransi" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-tot-biaya-asuransi" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -566,7 +566,7 @@
                                         <label class="col-sm-4 col-form-label">Usia Kendaraan s/d Akhir Tenor (th):</label>
                                         <div class="col-sm-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-usia-kend" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-usia-kend" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -578,7 +578,7 @@
                                                     <label class="col-sm-4 col-form-label">Basic Net Insurance:</label>
                                                     <div class="col-sm-8">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control inp-digit" id="inp-net-insc" disabled>
+                                                            <input type="text" class="form-control inp-digit" id="inp-net-insc" readonly>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -586,7 +586,7 @@
                                                     <label class="col-sm-4 col-form-label">Basic Gross Insurance:</label>
                                                     <div class="col-sm-8">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control inp-digit" id="inp-gross-insc" disabled>
+                                                            <input type="text" class="form-control inp-digit" id="inp-gross-insc" readonly>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -594,7 +594,7 @@
                                                     <label class="col-sm-4 col-form-label">Gross Insurance Default:</label>
                                                     <div class="col-sm-8">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control inp-digit" id="inp-default-gross" disabled>
+                                                            <input type="text" class="form-control inp-digit" id="inp-default-gross" readonly>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -644,7 +644,7 @@
                                             <input class="form-check-input" type="checkbox" id="check-liability" value="liability">
                                             <label class="form-check-label col-sm-5" for="check-liability">Limit Of Liability:</label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-limit-liability" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-limit-liability" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -694,7 +694,7 @@
                                         <label class="col-sm-4 col-form-label">Biaya Total Asuransi:</label>
                                         <div class="col-sm-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-tot-biaya-asuransi2" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-tot-biaya-asuransi2" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -706,7 +706,7 @@
                                                     <label class="col-sm-4 col-form-label">Net Insurance:</label>
                                                     <div class="col-sm-8">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control inp-digit" id="inp-net-insc2" disabled>
+                                                            <input type="text" class="form-control inp-digit" id="inp-net-insc2" readonly>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -714,7 +714,7 @@
                                                     <label class="col-sm-4 col-form-label">Gross Insurance:</label>
                                                     <div class="col-sm-8">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control inp-digit" id="inp-gross-insc2" disabled>
+                                                            <input type="text" class="form-control inp-digit" id="inp-gross-insc2" readonly>
                                                         </div>
                                                     </div>
                                                 </div>

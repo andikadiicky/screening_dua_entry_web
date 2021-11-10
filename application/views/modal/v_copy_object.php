@@ -17,7 +17,7 @@
                                         <label class="col-sm-4 col-form-label">Jenis Kendaraan:</label>
                                         <div class="col-sm-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-jenis-kend-copy-obj" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-jenis-kend-copy-obj" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -25,7 +25,7 @@
                                         <label class="col-sm-4 col-form-label">Merk:</label>
                                         <div class="col-sm-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-merk-copy-obj" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-merk-copy-obj" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -33,7 +33,7 @@
                                         <label class="col-sm-4 col-form-label">Model:</label>
                                         <div class="col-sm-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-model-copy-obj" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-model-copy-obj" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -41,7 +41,7 @@
                                         <label class="col-sm-4 col-form-label">Dealer:</label>
                                         <div class="col-sm-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control inp-digit" id="inp-dealer-copy-obj" disabled>
+                                                <input type="text" class="form-control inp-digit" id="inp-dealer-copy-obj" readonly>
                                             </div>
                                         </div>
                                     </div>

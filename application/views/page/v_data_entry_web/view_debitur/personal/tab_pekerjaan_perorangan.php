@@ -237,7 +237,7 @@
                                             <!-- Start Form Informasi Pekerjaan Pasangan Karyawan, ASN, Pejabat Penyelenggara Negara, TNI/POLRI -->
                                             <div id="form-pekerjaan-pasangan-karyawan">
                                                 <div class="form-group row">
-                                                    <label class="col-sm-5 col-form-label">Pekerjaan Pasangan*:</label>
+                                                    <label class="col-sm-5 col-form-label">Pekerjaan*:</label>
                                                     <div class="col-sm-7">
                                                         <select class="form-control select2bs4" style="width: 100%;" id="slc-pekerjaan-pasangan">
                                                             <option selected disabled=""></option>
@@ -361,7 +361,10 @@
                                     </div>
                                 </div>
                                 <div class="col" style="display: flex; justify-content:flex-end; position:absolute; right:0; bottom:0;">
-                                    <button class="btn btn-success" id="btn-save-pekerjaan-per"><i class="fa fa-save"></i> Save</button>
+                                    <button class="btn btn-success" id="btn-save-pekerjaan-karyawan"><i class="fa fa-save"></i> Save</button>
+                                </div>
+                                <div class="col" style="display: flex; display:none; justify-content:flex-end; position:absolute; right:0; bottom:0;">
+                                    <button class="btn btn-success" id="btn-save-pekerjaan-wira"><i class="fa fa-save"></i> Save</button>
                                 </div>
                                 <!-- END Informasi Pekerjaan -->
                             </div>
