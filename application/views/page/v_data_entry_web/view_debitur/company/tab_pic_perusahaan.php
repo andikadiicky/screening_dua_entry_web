@@ -31,7 +31,7 @@
                                                     <label class="col-sm-6 col-form-label">Upload KTP*:</label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
-                                                            <span class="btn btn-info btn-file">Upload<input type="file" id="upl-ktp-pic-perusahaan" /></span>
+                                                            <span class="btn btn-info btn-file"><i class="fas fa-file-upload"></i> Upload<input type="file" id="upl-ktp-pic-perusahaan" /></span>
                                                             <label style="margin-left: 10px;">.jpg, .jpeg, .png</label>
                                                         </div>
                                                     </div>

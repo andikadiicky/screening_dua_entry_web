@@ -35,7 +35,7 @@
                                                     <label class="col-sm-6 col-form-label">Upload KTP*:</label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
-                                                            <span class="btn btn-info btn-file">Upload<input type="file" id="ktp-pic-mgmnt" /></span>
+                                                            <span class="btn btn-info btn-file"><i class="fas fa-file-upload"></i> Upload<input type="file" id="ktp-pic-mgmnt" /></span>
                                                             <label style="margin-left: 10px;">.jpg, .jpeg, .png</label>
                                                         </div>
                                                     </div>
@@ -223,7 +223,7 @@
                                                     <label class="col-sm-6 col-form-label">Foto NPWP*:</label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
-                                                            <span class="btn btn-info btn-file">Upload<input type="file" id="npwp-pemegang-saham" /></span>
+                                                            <span class="btn btn-info btn-file"><i class="fas fa-file-upload"></i> Upload<input type="file" id="npwp-pemegang-saham" /></span>
                                                             <label style="margin-left: 10px;">.jpg, .jpeg, .png</label>
                                                         </div>
                                                     </div>
