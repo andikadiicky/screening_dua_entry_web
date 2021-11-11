@@ -135,7 +135,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col" style="display: flex; justify-content:flex-end; position:absolute; right:0; bottom:0;">
+                                                <div class="col to-bottom-right" style="display: flex; justify-content:flex-end; right:0; bottom:0;">
                                                     <button class="btn btn-success" id="btn-save-identitas-pic"><i class="fa fa-save"></i> Save</button>
                                                 </div>
                                             </div>
@@ -259,7 +259,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="col" style="display: flex; justify-content:flex-end; position:absolute; right:0; bottom:0;">
+                                                <div class="col to-bottom-right" style="display: flex; justify-content:flex-end; right:0; bottom:0;">
                                                     <button class="btn btn-success" id="btn-save-identitas-pemegang-saham"><i class="fa fa-save"></i> Save</button>
                                                 </div>
                                             </div>
@@ -351,7 +351,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="col" style="display: flex; justify-content:flex-end; position:absolute; right:0; bottom:0;">
+                                                <div class="col to-bottom-right" style="display: flex; justify-content:flex-end; right:0; bottom:0;">
                                                     <button class="btn btn-success" id="btn-save-pemegang-saham-masy"><i class="fa fa-save"></i> Save</button>
                                                 </div>
                                             </div>

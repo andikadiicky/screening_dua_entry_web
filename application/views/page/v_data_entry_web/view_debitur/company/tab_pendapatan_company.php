@@ -41,7 +41,7 @@
                                 <!-- END Informasi Pendapatan Company -->
                             </div>
                             <div class="col-md-6">
-                                <div class="col" style="display: flex; justify-content:flex-end; position:absolute; right:0; bottom:0;">
+                                <div class="col to-bottom-right" style="display: flex; justify-content:flex-end; right:0; bottom:0;">
                                     <button class="btn btn-success" id="btn-save-pendapatan-comp"><i class="fa fa-save"></i> Save</button>
                                 </div>
                             </div>

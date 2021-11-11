@@ -40,7 +40,9 @@
 	.add-margin-2{
 		margin-left: unset;
 	}
-	
+	.to-bottom-right{
+		position: unset;
+	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -73,5 +75,8 @@
 	}
 	.add-margin-2{
 		margin-left: 241px;
+	}
+	.to-bottom-right{
+		position: absolute;
 	}
 }

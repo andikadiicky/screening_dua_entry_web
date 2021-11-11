@@ -249,25 +249,25 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-3 col-form-label">Kelurahan*:</label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control" id="inp-kelurahan-comp" disabled>
+                                                    <input type="text" class="form-control" id="inp-kelurahan-comp" readonly>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-3 col-form-label">Kecamatan*:</label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control" id="inp-kecamatan-comp" disabled>
+                                                    <input type="text" class="form-control" id="inp-kecamatan-comp" readonly>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-3 col-form-label">Kab/Kota*:</label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control" id="inp-kabkot-comp" disabled>
+                                                    <input type="text" class="form-control" id="inp-kabkot-comp" readonly>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-3 col-form-label">Provinsi*:</label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control" id="inp-provinsi-comp" disabled>
+                                                    <input type="text" class="form-control" id="inp-provinsi-comp" readonly>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
@@ -297,7 +297,7 @@
                                 <!-- END Alamat Perusahaan -->
                             </div>
                             <div class="col-md-6">
-                                <div class="col" style="display: flex; justify-content:flex-end; position:absolute; right:0; bottom:0;">
+                                <div class="col to-bottom-right" style="display: flex; justify-content:flex-end; right:0; bottom:0;">
                                     <button class="btn btn-success" id="btn-save-iden-comp"><i class="fa fa-save"></i> Save</button>
                                 </div>
                             </div>
