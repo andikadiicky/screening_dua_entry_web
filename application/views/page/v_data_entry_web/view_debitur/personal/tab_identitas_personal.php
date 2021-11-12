@@ -160,7 +160,7 @@
                                                     <label class="col-sm-6 col-form-label">Foto NPWP:</label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
-                                                            <span class="btn btn-info btn-file"><i class="fas fa-file-upload"></i> Upload<input type="file" id="npwp-personal" /></span>
+                                                            <span class="btn btn-info btn-file"><i class="fas fa-file-upload"></i> Upload<input type="file" id="upl-npwp-personal"/></span>
                                                             <label style="margin-left: 10px;">.jpg, .jpeg, .png</label>
                                                         </div>
                                                     </div>
@@ -185,7 +185,7 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-6 col-form-label">Jenis Identitas Pasangan*:</label>
                                                     <div class="col-sm-6">
-                                                        <select class="form-control select2bs4" style="width: 100%;" id="slc-jenis-identitas">
+                                                        <select class="form-control select2bs4" style="width: 100%;" id="slc-jenis-identitas-pasangan">
                                                             <option selected disabled=""></option>
                                                         </select>
                                                     </div>

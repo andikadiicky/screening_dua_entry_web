@@ -11,21 +11,186 @@ app.formEntryWebScrDua = {
 	controller: 'c_data_entry_web/',
 	api: 'c_data_entry_web_api/',
 	elm: {},
+	message_hint: "Ketik untuk melakukan pencarian minimal 4 karakter",
 
 	init: function () {
-		var that = this;
+		var file = this;
+		file.getJenisIdentitas();
+		file.getStatusKawin();
+		file.getJenisIdentitasPasangan();
 
+	},
+
+	imageUploaded: function () {
+		var fileUpload = document.querySelector(
+			'input[type=file]')['files'][0];
+		console.log(fileUpload);
+		var arrType = [];
+		arrType = fileUpload.type.split("/");
+
+		if (arrType[1] != "jpg" && arrType[1] != "jpeg" && arrType[1] != "png") {
+			alert_error("Format foto tidak sesuai!");
+			$("#upl-npwp-personal").val("");
+		} else {
+			var reader = new FileReader();
+			console.log("next");
+			reader.onload = function (event) {
+				var image = new Image();
+				image.onload = function () {
+					var canvas = document.createElement('canvas');
+					var context = canvas.getContext("2d");
+					canvas.width = image.width / 4;
+					canvas.height = image.height / 4;
+					context.drawImage(image,
+						0,
+						0,
+						image.width,
+						image.height,
+						0,
+						0,
+						canvas.width,
+						canvas.height
+					);
+
+					console.log("COMPRESS -> " + canvas.toDataURL());
+					base64String = canvas.toDataURL().replace("data:", "")
+						.replace(/^.+,/, "");
+					imageBase64Stringsep = base64String;
+					localStorage.setItem("base64StringImage", base64String);
+					console.log(base64String);
+				}
+				image.src = event.target.result;
+			}
+			reader.readAsDataURL(fileUpload);
+		}
+	},
+
+	getJenisIdentitas: function () {
+		var file = app.formEntryWebScrDua;
+		$.ajax({
+			url: app.base_url + file.api + "getAllCard",
+			success: function (response, textStatus, jqXHR) {
+				if (response.status && response.data.length != 0) {
+					var jenis_identitas = response.data.map(function (obj) {
+						return {
+							id: obj.id_card,
+							text: obj.id_card_desc
+						};
+					});
+				} else {
+					file.getJenisIdentitas();
+				}
+				//parameter JENIS IDENTITAS
+				$('#slc-jenis-identitas-personal').select2({
+					theme: 'bootstrap4',
+					placeholder: 'PILIH JENIS IDENTITAS',
+					language: 'id',
+					allowClear: true,
+					cache: true,
+					dataType: 'json',
+					data: jenis_identitas,
+					processResults: function (response) {
+						return {
+							results: response.data.map(function (obj) {
+								return {
+									id: obj.id_card,
+									text: obj.id_card_desc
+								};
+							})
+						};
+					}
+				});
+			}
+		});
+	},
+
+	getStatusKawin: function() {
+        var file = app.formEntryWebScrDua;
+        $.ajax({
+            url: app.base_url + file.api + "getAllMarital",
+            success: function(response, textStatus, jqXHR) {
+                if (response.status && response.data.length != 0) {
+                    var status_kawin = response.data.map(function(obj) {
+                        return {
+                            id: obj.MARITAL_ID,
+                            text: obj.MARITAL_DESC
+                        };
+                    });
+                } else {
+                    file.getStatusKawin();
+                }
+                //parameter STATUS PERKAWINAN
+                $('#slc-status-kawin-personal').select2({
+                    theme: 'bootstrap4',
+                    placeholder: 'PILIH STATUS PERKAWINAN',
+                    language: 'id',
+                    allowClear: true,
+                    cache: true,
+                    dataType: 'json',
+                    data: status_kawin,
+                    processResults: function(response) {
+                        return {
+                            results: response.data.map(function(obj) {
+                                return {
+                                    id: obj.MARITAL_ID,
+                                    text: obj.MARITAL_DESC
+                                };
+                            })
+                        };
+                    }
+                });
+            }
+        });
+    },
+
+	getJenisIdentitasPasangan: function () {
+		var file = app.formEntryWebScrDua;
+		$.ajax({
+			url: app.base_url + file.api + "getAllCard",
+			success: function (response, textStatus, jqXHR) {
+				if (response.status && response.data.length != 0) {
+					var jenis_identitas = response.data.map(function (obj) {
+						return {
+							id: obj.id_card,
+							text: obj.id_card_desc
+						};
+					});
+				} else {
+					file.getJenisIdentitas();
+				}
+				//parameter JENIS IDENTITAS
+				$('#slc-jenis-identitas-pasangan').select2({
+					theme: 'bootstrap4',
+					placeholder: 'PILIH JENIS IDENTITAS',
+					language: 'id',
+					allowClear: true,
+					cache: true,
+					dataType: 'json',
+					data: jenis_identitas,
+					processResults: function (response) {
+						return {
+							results: response.data.map(function (obj) {
+								return {
+									id: obj.id_card,
+									text: obj.id_card_desc
+								};
+							})
+						};
+					}
+				});
+			}
+		});
 	},
 }
 
 //Parameter tipe debitur *Hardcode
 var tipe_debitur = [{
 		id: 0,
-		text: 'Perorangan'
+		text: 'PERSONAL'
 	},
 	{
 		id: 1,
-		text: 'Company'
+		text: 'COMPANY'
 	}
 ]
 
@@ -39,6 +204,30 @@ $('#slc-tipe-deb').select2({
 //END parameter tipe debitur *Hardcode
 
 //FUNCTION FOR => TAB DEBITUR PERSONAL - IDENTITAS//
+//Parameter jenis kelamin *Hardcode
+var join_income = [{
+		id: 'L',
+		text: 'LAKI-LAKI'
+	},
+	{
+		id: 'P',
+		text: 'PEREMPUAN'
+	}
+]
+
+$('#slc-jenis-kelamin-personal').select2({
+	theme: 'bootstrap4',
+	placeholder: 'SILAHKAN PILIH',
+	language: 'id',
+	allowClear: true,
+	data: join_income
+});
+//END parameter jenis kelamin *Hardcode
+
+$('#upl-npwp-personal').change(function () {
+	var file = app.formEntryWebScrDua
+	file.imageUploaded();
+});
 
 //FUNCTION FOR => TAB DEBITUR PERSONAL - PEKERJAAN//
 

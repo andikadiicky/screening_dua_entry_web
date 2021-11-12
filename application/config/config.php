@@ -28,6 +28,8 @@ date_default_timezone_set('Asia/Jakarta');
 $root = "http://".$_SERVER['HTTP_HOST'];
 $root .= strtolower(str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']));
 $config['base_url']    = "$root";
+
+$config['java_postgre_zip_code'] = 'http://master-zip-code-java-dev.apps.ocp4dev.muf.co.id/'; //getenv('PG_ZIP_CODE'); "http://10.20.10.169:8098/master_zipcode_pg/";
 /*
 |--------------------------------------------------------------------------
 | Index File
