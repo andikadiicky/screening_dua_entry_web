@@ -18,6 +18,8 @@ app.formEntryWebScrDua = {
 		file.getJenisIdentitas();
 		file.getStatusKawin();
 		file.getJenisIdentitasPasangan();
+		file.getZipCodePostgreKTP();
+		file.getZipCodePostgreDOM();
 
 	},
 
@@ -30,8 +32,8 @@ app.formEntryWebScrDua = {
 
 		if (arrType[1] != "jpg" && arrType[1] != "jpeg" && arrType[1] != "png") {
 			alert_error("Format foto tidak sesuai!");
-			$("#upl-npwp-personal").val("");
-		} else {
+			$("#upl-npwp-debitur").val("");
+		}else {
 			var reader = new FileReader();
 			console.log("next");
 			reader.onload = function (event) {
@@ -64,6 +66,7 @@ app.formEntryWebScrDua = {
 			reader.readAsDataURL(fileUpload);
 		}
 	},
+	
 
 	getJenisIdentitas: function () {
 		var file = app.formEntryWebScrDua;
@@ -181,6 +184,250 @@ app.formEntryWebScrDua = {
 			}
 		});
 	},
+
+	changeZipCodeKTP: function () {
+		var valueAll = $("#slc-zipcode-ktp").val();
+		var arrValueAllSplit = valueAll.split(",");
+		var data = [];
+
+		data.push({
+			"KELURAHAN_ID": arrValueAllSplit[1],
+			"KELURAHAN_NAME": arrValueAllSplit[2],
+			"KECAMATAN_ID": arrValueAllSplit[3],
+			"KECAMATAN_NAME": arrValueAllSplit[4],
+			"KABKOT_ID": arrValueAllSplit[5],
+			"KABKOT_NAME": arrValueAllSplit[6],
+			"PROVINSI_ID": arrValueAllSplit[7],
+			"PROVINSI_NAME": arrValueAllSplit[8]
+		});
+
+		var dataKelurahan = data.map(function (obj) {
+			return {
+				id: obj.KELURAHAN_ID,
+				text: obj.KELURAHAN_NAME
+			}
+		});
+
+		var dataKecamatan = data.map(function (obj) {
+			return {
+				id: obj.KECAMATAN_ID,
+				text: obj.KECAMATAN_NAME
+			}
+		});
+
+		var dataKabKot = data.map(function (obj) {
+			return {
+				id: obj.KABKOT_ID,
+				text: obj.KABKOT_NAME
+			}
+		});
+
+		var dataProvinsi = data.map(function (obj) {
+			return {
+				id: obj.PROVINSI_ID,
+				text: obj.PROVINSI_NAME
+			}
+		})
+
+		$("#inp-kelurahan-ktp").select2({
+			theme: 'bootstrap4',
+			tags: true,
+			placeholder: "PILIH KELURAHAN",
+			allowClear: true,
+			data: dataKelurahan
+		}).val(data[0]['KELURAHAN_ID']).trigger('change');
+
+		$("#inp-kecamatan-ktp").select2({
+			theme: 'bootstrap4',
+			tags: true,
+			placeholder: "PILIH KECAMATAN",
+			allowClear: true,
+			data: dataKecamatan
+		}).val(data[0]['KECAMATAN_ID']).trigger('change');
+
+		$("#inp-kabkot-ktp").select2({
+			theme: 'bootstrap4',
+			tags: true,
+			placeholder: "PILIH KAB/KOT",
+			allowClear: true,
+			data: dataKabKot
+		}).val(data[0]['KABKOT_ID']).trigger('change');
+
+		$("#inp-provinsi-ktp").select2({
+			theme: 'bootstrap4',
+			tags: true,
+			placeholder: "PILIH PROVINSI",
+			allowClear: true,
+			data: dataProvinsi
+		}).val(data[0]['PROVINSI_ID']).trigger('change');
+	},
+	changeZipCodeDOM: function () {
+		var valueAll = $("#slc-zipcode-dom").val();
+		var arrValueAllSplit = valueAll.split(",");
+		var data = [];
+
+		data.push({
+			"KELURAHAN_ID": arrValueAllSplit[1],
+			"KELURAHAN_NAME": arrValueAllSplit[2],
+			"KECAMATAN_ID": arrValueAllSplit[3],
+			"KECAMATAN_NAME": arrValueAllSplit[4],
+			"KABKOT_ID": arrValueAllSplit[5],
+			"KABKOT_NAME": arrValueAllSplit[6],
+			"PROVINSI_ID": arrValueAllSplit[7],
+			"PROVINSI_NAME": arrValueAllSplit[8]
+		});
+
+		var dataKelurahan = data.map(function (obj) {
+			return {
+				id: obj.KELURAHAN_ID,
+				text: obj.KELURAHAN_NAME
+			}
+		});
+
+		var dataKecamatan = data.map(function (obj) {
+			return {
+				id: obj.KECAMATAN_ID,
+				text: obj.KECAMATAN_NAME
+			}
+		});
+
+		var dataKabKot = data.map(function (obj) {
+			return {
+				id: obj.KABKOT_ID,
+				text: obj.KABKOT_NAME
+			}
+		});
+
+		var dataProvinsi = data.map(function (obj) {
+			return {
+				id: obj.PROVINSI_ID,
+				text: obj.PROVINSI_NAME
+			}
+		})
+
+		$("#inp-kelurahan-dom").select2({
+			theme: 'bootstrap4',
+			tags: true,
+			placeholder: "PILIH KELURAHAN",
+			allowClear: true,
+			data: dataKelurahan
+		}).val(data[0]['KELURAHAN_ID']).trigger('change');
+
+		$("#inp-kecamatan-dom").select2({
+			theme: 'bootstrap4',
+			tags: true,
+			placeholder: "PILIH KECAMATAN",
+			allowClear: true,
+			data: dataKecamatan
+		}).val(data[0]['KECAMATAN_ID']).trigger('change');
+
+		$("#inp-kabkot-dom").select2({
+			theme: 'bootstrap4',
+			tags: true,
+			placeholder: "PILIH KAB/KOT",
+			allowClear: true,
+			data: dataKabKot
+		}).val(data[0]['KABKOT_ID']).trigger('change');
+
+		$("#inp-provinsi-dom").select2({
+			theme: 'bootstrap4',
+			tags: true,
+			placeholder: "PILIH PROVINSI",
+			allowClear: true,
+			data: dataProvinsi
+		}).val(data[0]['PROVINSI_ID']).trigger('change');
+	},
+
+	getZipCodePostgreKTP: function () {
+		var file = app.formEntryWebScrDua;
+		$("#slc-zipcode-ktp").select2({
+			theme: 'bootstrap4',
+			placeholder: "PILIH KODE POS",
+			allowClear: true,
+			// data: xdata,
+			minimumInputLength: 4,
+			language: {
+				inputTooShort: function () {
+					return file.message_hint
+				},
+			},
+			ajax: {
+				dataType: 'json',
+				cache: true,
+				url: app.base_url + file.api + "getDataZipCodePostgre",
+				type: "POST",
+				data: function (params) {
+					var query = {
+						value: params.term
+					}
+					return query;
+				},
+				processResults: function (response) {
+
+					var json = $.parseJSON(response);
+					console.log(json);
+					var data = json.data.map(function (value) {
+						return {
+							id: value.zip_code + "," + value.kelurahan_id + "," + value.kelurahan_name + "," + value.kecamatan_id + "," + value.kecamatan_name + "," + value.kab_kot_id + "," + value.kab_kot_name + "," + value.provinsi_id + "," + value.provinsi_name,
+							text: value.zip_code + " | " + value.kelurahan_name
+						}
+					});
+					return {
+						results: data,
+					};
+				}
+			}
+
+		}).change(function () {
+			var file = app.formEntryWebScrDua;
+			file.changeZipCodeKTP();
+		})
+	},
+	getZipCodePostgreDOM: function () {
+		var file = app.formEntryWebScrDua;
+		$("#slc-zipcode-dom").select2({
+			theme: 'bootstrap4',
+			placeholder: "PILIH KODE POS",
+			allowClear: true,
+			// data: xdata,
+			minimumInputLength: 4,
+			language: {
+				inputTooShort: function () {
+					return file.message_hint
+				},
+			},
+			ajax: {
+				dataType: 'json',
+				cache: true,
+				url: app.base_url + file.api + "getDataZipCodePostgre",
+				type: "POST",
+				data: function (params) {
+					var query = {
+						value: params.term
+					}
+					return query;
+				},
+				processResults: function (response) {
+
+					var json = $.parseJSON(response);
+					console.log(json);
+					var data = json.data.map(function (value) {
+						return {
+							id: value.zip_code + "," + value.kelurahan_id + "," + value.kelurahan_name + "," + value.kecamatan_id + "," + value.kecamatan_name + "," + value.kab_kot_id + "," + value.kab_kot_name + "," + value.provinsi_id + "," + value.provinsi_name,
+							text: value.zip_code + " | " + value.kelurahan_name
+						}
+					});
+					return {
+						results: data,
+					};
+				}
+			}
+
+		}).change(function () {
+			var file = app.formEntryWebScrDua;
+			file.changeZipCodeDOM();
+		})
+	},
 }
 
 //Parameter tipe debitur *Hardcode
@@ -224,7 +471,11 @@ $('#slc-jenis-kelamin-personal').select2({
 });
 //END parameter jenis kelamin *Hardcode
 
-$('#upl-npwp-personal').change(function () {
+$('#upl-npwp-debitur').change(function () {
+	var file = app.formEntryWebScrDua
+	file.imageUploaded();
+});
+$('#upl-ktp-pasangan').change(function () {
 	var file = app.formEntryWebScrDua
 	file.imageUploaded();
 });

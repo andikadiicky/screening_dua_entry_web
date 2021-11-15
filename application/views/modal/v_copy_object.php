@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-success btn-sm btn-ok" data-dismiss="modal" id="btn-ok">OK</button>
+                <button type="button" class="btn btn-success btn-sm" data-dismiss="modal" id="btn-oke">OK</button>
                 <button type="button" class="btn btn-danger btn-sm btn-no" data-dismiss="modal" id="btn-cancel">Cancel</button>
             </div>
         </div>
